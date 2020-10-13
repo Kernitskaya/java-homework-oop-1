@@ -23,6 +23,8 @@ public class Conditioner {
         return currentTemperature;
     }
 
+    public void setCurrentTemperature(int currentTemperature) { this.currentTemperature = currentTemperature; }
+
     public boolean isOn() {
         return on;
     }
@@ -51,5 +53,9 @@ public class Conditioner {
             return;
         }
         this.currentTemperature--;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
